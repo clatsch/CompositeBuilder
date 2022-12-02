@@ -36,7 +36,7 @@ public class AttributedCompositeNodeTest {{
     it("should have access to added children", () -> {
       AttributedCompositeNode node = AttributedCompositeNode.create();
       node.addChild(node);
-      expect(node.children.size()).toEqual(2);
+      expect(node.children.size()).toEqual(1);
     });
 
     describe("Child", () -> {
