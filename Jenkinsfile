@@ -19,7 +19,7 @@ pipeline {
             }
          }
       }
-      stage('Quality analysis') {
+     /*  stage('Quality analysis') {
          steps {
             // Docs: https://docs.sonarqube.org/latest/analysis/scan/sonarscanner-for-jenkins/
             // ** NOTE: This 'sonar server' SonarQube server must be configured in the system configuration.
@@ -27,6 +27,6 @@ pipeline {
                sh "mvn -Dmaven.test.skip=true package sonar:sonar"
             }
          }
-      }
+      } */
    }
 }
